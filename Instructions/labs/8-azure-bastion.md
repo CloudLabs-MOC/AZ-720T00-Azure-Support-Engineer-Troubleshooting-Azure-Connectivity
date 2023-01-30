@@ -8,8 +8,10 @@ In this lab, you'll see how to troubleshoot the Azure Bastion Service.
 
 ## Task 1: Check that the issue still exists
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using the credentials above, or if you'd like your own Azure subscription.
-
+1. If you are not logged in already, click on Azure portal shortcut that is available on the desktop and log in with below Azure credentials or skip to the next step.\
+    **Azure Username/Email:** <inject key="AzureAdUserEmail"></inject> \
+    **Azure Password:** <inject key="AzureAdUserPassword"></inject>
+    
 1. Select the top left portal menu, select **Virtual machines**, then select **labvm-<inject key="DeploymentID" enableCopy="false"/>**.
 
 1. On the Overview pane, select **Connect**, then select **Bastion**.
@@ -20,7 +22,7 @@ In this lab, you'll see how to troubleshoot the Azure Bastion Service.
 
 1. Select **Connect**.
 
-Note that it takes time for the new tab to open, and when it does there's no response.
+>**Note** It takes time for the new tab to open, and when it does there's no response.
 
 ## Task 2: Check that Bastion has been deployed
 
