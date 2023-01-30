@@ -21,7 +21,7 @@ In this lab, you'll use what you've learned to go through steps to troubleshoot 
     ![Screenshot showing how to access the cloud shell.](../media/mod6-2.png)
 
 1. Select **Bash**, then select **Create storage**.
- >[NOTE] \
+ >**Note** \
  >Incase, "Storage creation failed", go through these sub-steps:
  >1. Click **Show advanced settings** and enter the details as shown below:
  >![](../media/mod6-3.png)\
@@ -40,11 +40,11 @@ In this lab, you'll use what you've learned to go through steps to troubleshoot 
     --query '[ipAddress]' \
     --output tsv
     ```
-    > [NOTE] Replace **DID** with <inject key="Deployment ID" enableCopy="false" />
+    > **Note** In the above snippet, replace **DID** with <inject key="Deployment ID" enableCopy="false" />
 
 5. Copy the IP address, in a new tab in your browser, try to navigate to it.
 
-    > [NOTE]
+    > **Note**
     > Your IP address will be different to the one shown in the screenshot.
 
 6. Hit refresh in your browser, or on Windows press the **F5** ten or twenty times. Notice that you are getting a response from the same webserver every single time.
@@ -91,14 +91,14 @@ The current settings appear to be correct.
 
     ![Screenshot of the frontend IP settings of the load balancer.](../media/mod6-10.png)
 
-    > [NOTE]
+    > **Note**
     > There is a correctly configured frontend IP address. Check that it matches the IP address you have in your other tab.
 
 1. Under **Settings**, select **Backend pools**.
 
     ![Screenshot of the load balancer backend pool.](../media/mod6-11.png)
 
-    > [NOTE]
+    > **Note**
     > The virtual machines are both running.
 
 1. Under **Settings**, select **Load balancing rules**, then select **webLoadBalancerRule**.
@@ -117,7 +117,7 @@ You think you have identified the issue. At the moment once a user visits the we
 
     ![Screenshot showing the rule fixed.](../media/mod6-14.png)
 
-    > [NOTE]
+    > **Note**
     > By setting **Session persistence** to **None**, successive request from clients can be handled by different virtual machines.
 
 1. Wait until the rule has been deployed successfully.
