@@ -12,7 +12,9 @@ In this lab, you'll use what you've learned to go through steps to troubleshoot 
 
 ## Task 1: Check that the issue still exists
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using the credentials above in the **Environment Details** page, or if you'd like your own Azure subscription.
+1. If you are not logged in already, click on Azure portal shortcut that is available on the desktop and log in with below Azure credentials or skip to the next step.
+    * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
+    * Azure Password: <inject key="AzureAdUserPassword"></inject>
 
 1. Use this Azure CLI command in the Cloud Shell to get the public IP address of the scale set.
 
@@ -30,15 +32,15 @@ In this lab, you'll use what you've learned to go through steps to troubleshoot 
  > Click **Create storage** 
 
 4. In the cloud shell run this command:
-   > [NOTE] Change the below resource group name from lab6rg to **lab06-rg-<inject key="Deployment ID" enableCopy="false" />**
    
     ```
     az network public-ip show \
-    --resource-group lab6rg \
+    --resource-group lab06-rg-DID \
     --name webPublicIP \
     --query '[ipAddress]' \
     --output tsv
     ```
+    > [NOTE] Replace **DID** with <inject key="Deployment ID" enableCopy="false" />
 
 5. Copy the IP address, in a new tab in your browser, try to navigate to it.
 
