@@ -27,7 +27,7 @@ In this lab, you'll use what you've learned to go through steps to troubleshoot 
  
  >![](../media/az720-5-6-cli.png)
  > Resource Group: **lab06-rg-<inject key="Deployment ID" enableCopy="false" />** \
- > Storage Account: **cloudstor<inject key="Deployment ID" enableCopy="false" />** \
+ > Storage Account: **cloudstore<inject key="Deployment ID" enableCopy="false" />** \
  > File share (create new): **blob** \
  > Click **Create storage** 
 
